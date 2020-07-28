@@ -1,12 +1,9 @@
 package com.example.nection_android.api.endpoint
 
 import com.example.nection_android.model.PhoneAuthResponse
-import com.google.gson.JsonObject
 import io.reactivex.Single
-import org.json.JSONObject
 import retrofit2.Response
 import retrofit2.http.*
-import java.util.*
 
 interface PhoneAuthApis {
     @POST("v1/auths")
