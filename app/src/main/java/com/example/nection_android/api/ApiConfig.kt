@@ -1,6 +1,6 @@
 package com.example.nection_android.api
 
 object ApiConfig {
-    //const val baseURL = "https://www.nection.me/api"
-    const val baseURL = "http://localhost:3000/api"
+    // ローカルで動作検証
+    const val baseURL = "http://localhost:3000/api/"
 }
