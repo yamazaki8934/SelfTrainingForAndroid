@@ -12,15 +12,11 @@ class OnboardingActivity : AppCompatActivity() {
         setContentView(R.layout.activity_onboarding)
 
         smsButton.setOnClickListener {onSmsButtonTapped()}
-        facebookButton.setOnClickListener { onFacebookButtonTapped() }
     }
 
+    // 遷移の練習
     fun onSmsButtonTapped() {
         val intent = Intent(this, PhoneNumberActivity::class.java)
         startActivity(intent)
-    }
-
-    fun onFacebookButtonTapped() {
-
     }
 }

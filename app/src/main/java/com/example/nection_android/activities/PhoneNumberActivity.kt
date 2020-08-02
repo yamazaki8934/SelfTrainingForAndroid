@@ -13,7 +13,6 @@ class PhoneNumberActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_phone_number)
-        //setSupportActionBar(findViewById(R.id.toolbar))
         onActivtityCreated(savedInstanceState)
     }
 
@@ -22,6 +21,7 @@ class PhoneNumberActivity : AppCompatActivity() {
     }
 
     fun onNextButtonTapped() {
+        // ここでHttp通信の動作検証を行う
         ApiClient.postPhoneNumber()
             .phoneAuth(phoneNumber = phoneNumberEditText.text.toString(), countryCode = 81)
             .subscribeOn(Schedulers.io())
