@@ -1,7 +1,7 @@
 package com.example.nection_android.api.endpoint
 
 import com.example.nection_android.model.PhoneAuthResponse
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
 import retrofit2.Response
 import retrofit2.http.*
 
